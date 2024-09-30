@@ -1711,7 +1711,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 ---------------------------------*/
 
 .section-space {
-    padding-top: 120px;
+    /* padding-top: 120px; */
     padding-bottom: 120px;
 }
 
