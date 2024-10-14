@@ -7435,14 +7435,16 @@ body .ui-tooltip {
      -moz-column-gap: 30px;
           column-gap: 30px;
 }
-@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+
+@media (max-width: 575px), 
+       (min-width: 576px) and (max-width: 767px), 
+       (min-width: 768px) and (max-width: 991px) {
   .home__menu-grid {
     padding: 10px 0 20px;
-    -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: 1fr; /* For IE support */
   }
 }
-
 .home__menu-thumb {
   height: 340px;
   position: relative;
@@ -13409,10 +13411,7 @@ body .ui-tooltip {
   margin-top: 10px;
 }
 
-.contact-map {
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
-}
+
 .contact-map iframe {
   width: 100%;
 }
