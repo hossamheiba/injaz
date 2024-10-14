@@ -2295,6 +2295,7 @@ a:hover {
   margin: 0;
 }
 .breadcrumb__background {
+
   width: 100%;
   height: 100%;
   position: absolute;
@@ -2305,7 +2306,7 @@ a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   background-size: cover;
-  background-position: center bottom;
+  background-position: center ;
 }
 .breadcrumb__content {
   position: relative;
@@ -11848,7 +11849,7 @@ body .ui-tooltip {
 }
 .latest-project__item-thumb img {
   width: 100%;
-  height: 100%;
+  height: 50vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
