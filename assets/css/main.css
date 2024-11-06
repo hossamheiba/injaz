@@ -12042,8 +12042,8 @@ body .ui-tooltip {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  -webkit-filter: saturate(0);
-  filter: saturate(0);
+  /* -webkit-filter: saturate(0);
+  filter: saturate(0); */
 }
 
 .team__item-title a:hover {
