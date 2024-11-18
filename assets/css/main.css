@@ -7781,7 +7781,7 @@ body .ui-tooltip {
   list-style: none;
   display: inline-block;
   -webkit-margin-end: 35px;
-  margin-inline-end: 35px;
+  margin-inline-end: 30px;
   /* submenu css start */
   /* mega menu start */
 }
@@ -12042,8 +12042,8 @@ body .ui-tooltip {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  /* -webkit-filter: saturate(0);
-  filter: saturate(0); */
+  -webkit-filter: saturate(0);
+  filter: saturate(0);
 }
 
 .team__item-title a:hover {
