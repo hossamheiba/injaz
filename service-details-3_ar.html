@@ -1,10 +1,10 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html dir="rtl" class="no-js" lang="ar">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingaz</title>
+    <title>إنجاز</title>
 
     <!-- Place favicon.ico in the root directory -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/logo/logos.png">
@@ -25,6 +25,11 @@
 </head>
 
 <body class="body-1">
+
+    <!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
     <!-- preloader start -->
     <!-- style 1 -->
     <div id="preloader" data-preloader="active" data-loaded="doted">
@@ -71,6 +76,54 @@
     </div>
     <!-- cursorAnimation end -->
 
+    <!-- search popup start -->
+    <div class="search__popup">
+        <div class="container">
+            <div class="row gx-30">
+                <div class="col-xxl-12">
+                    <div class="search__wrapper">
+                        <div class="search__top d-flex justify-content-between align-items-center">
+                            <div class="search__logo">
+                                <a href="index.html">
+                                    <img src="assets/imgs/logo/logo-white.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="search__close">
+                                <button type="button" class="search__close-btn search-close-btn">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                        <path d="M17 1L1 17" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M1 1L17 17" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="search__form">
+                            <form action="#">
+                                <div class="search__input">
+                                    <input class="search-input-field" type="text" placeholder="Type here to search...">
+                                    <span class="search-focus-border"></span>
+                                    <button type="submit">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M9.55 18.1C14.272 18.1 18.1 14.272 18.1 9.55C18.1 4.82797 14.272 1 9.55 1C4.82797 1 1 4.82797 1 9.55C1 14.272 4.82797 18.1 9.55 18.1Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M19.0002 19.0002L17.2002 17.2002" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- search popup end -->
+
     <!-- Offcanvas area start -->
     <div class="fix">
         <div class="offcanvas__area">
@@ -79,7 +132,7 @@
                     <div class="offcanvas__top d-flex justify-content-between align-items-center">
                         <div class="offcanvas__logo">
                             <a href="index.html">
-                                <img src="assets/imgs/logo/logos.png" alt="logo not found">
+                                <img src="assets/imgs/logo/logos.png" alt="logo not found" />
                             </a>
                         </div>
                         <div class="offcanvas__close">
@@ -93,8 +146,35 @@
                         </div>
                     </div>
                     <div class="mobile-menu fix"></div>
+                    <div class="offcanvas__social">
+                        <h4 class="offcanvas__title mb-20">اشترك واتبعنا</h4>
+                        <p class="mb-30">كانت بلح البحر مطهوة بشكل مثالي، طرية ولذيذة، مع مزيج رائع من الريزوتو الكريمي
+                            والخضروات الموسمية. كانت التقديمات فنية، مما أظهر اهتمام الشيف بالتفاصيل.</p>
 
+                        <ul class="header-top-socail-menu d-flex">
+                            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                            <li><a href="https://vimeo.com/"><i class="fa-brands fa-vimeo-v"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="offcanvas__btn">
+                        <div class="header__btn-wrap">
+                            <a href="contact.html" class="rr-btn__header d-sm-none mb-10 w-100">
+                                <span class="btn-wrap">
+                                    <span class="text-one">ابدأ الآن</span>
+                                    <span class="text-two">ابدأ الآن</span>
+                                </span>
+                            </a>
+                            <!-- <a href="https://themeforest.net/user/rrdevs/portfolio" class="rr-btn__header w-100"> -->
+                            <span class="btn-wrap">
+                                <span class="text-one">اشترِ الآن</span>
+                                <span class="text-two">اشترِ الآن</span>
+                            </span>
 
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -125,17 +205,18 @@
                                                 stroke="#E13F3A" stroke-width="1.5" stroke-linecap="round"
                                                 stroke-linejoin="round" />
                                         </svg>
-                                        Al Manar, Ibn Sina Dist - Near DHL Building - Al Khobar 34627 - Saudi Arabia
+                                        المنار، حي ابن سينا - بالقرب من مبنى DHL - الخبر 34627 - المملكة العربية
+                                        السعودية
                                     </a>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-xxl-6 col-7">
                             <div class="header__top-menu__wrapper align-items-center d-flex justify-content-end">
-                                <span class="follow">Follow Us:</span>
+                                <span class="follow">تابعنا:</span>
                                 <ul class="header__top-menu d-flex justify-content-end">
                                     <li>
-                                        <a href="#">
+                                        <a href="javascript:void(0)">
                                             <svg width="9" height="16" viewBox="0 0 9 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <g>
@@ -147,7 +228,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="javascript:void(0)">
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -157,7 +238,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="javascript:void(0)">
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -172,7 +253,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="javascript:void(0)">
                                             <svg width="21" height="16" viewBox="0 0 21 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <g>
@@ -184,7 +265,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="javascript:void(0)">
                                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <g>
@@ -224,34 +305,31 @@
                             <div class="main-menu main-menu-2">
                                 <nav id="mobile-menu">
                                     <ul>
-                                        <!-- <li class="active" ><a style="margin: inherit;" href="">AR</a></li> -->
+                                        <li class="active "><a style="margin: inherit;"
+                                                href="service-details-3.html">EN</a></li>
 
-                                        <li class=""><a href="index.html">Home</a></li>
-
-
+                                        <li class=""><a href="index_ar.html">الرئيسية</a></li>
+                                        <li class=""><a href="about-us_ar.html">من نحن</a></li>
 
                                         <li class="has-dropdown">
-                                            <a href="javascript:void(0)">Who We Are</a>
+                                            <a href="javascript:void(0)">خدماتنا</a>
                                             <ul class="submenu">
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="ceo.html">CEO Manager</a></li>
-                                                <li><a href="visionMission.html">Vision & Mission</a></li>
-                                                <li><a href="organization.html">Organization</a></li>
+                                                <li>
+                                                    <a href="service-details_ar.html">أنظمة التكييف</a>
+                                                </li>
+                                                <li>
+                                                    <a href="service-details-2_ar.html">المقاولات العامة</a>
+                                                </li>
+                                                <li>
+                                                    <a href="service-details-3_ar.html">الصيانة</a>
+                                                </li>
                                             </ul>
                                         </li>
-                                        <li class="has-dropdown">
-                                            <a href="javascript:void(0)">Our Service</a>
-                                            <ul class="submenu">
-                                                <li><a href="service-details.html">HVAC</a></li>
-                                                <li><a href="service-details-2.html">General Contracting</a></li>
-                                                <li><a href="service-details-3.html">Maintence</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class=""><a href="project.html">Our Project</a></li>
-                                        <li class=""><a href="Gallery.html">Gallery</a></li>
-                                        <li class=""><a href=" career.html">Career </a></li>
+                                        <li class=""><a href="project_ar.html">مشاريعنا</a></li>
+                                        <li class=""><a href="Gallery_ar.html">المعرض</a></li>
+                                        <li class=""><a href="career_ar.html">الوظائف</a></li>
 
-                                        <li><a href="contact.html">Contact us</a></li>
+                                        <li><a href="contact_ar.html">اتصل بنا</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -272,7 +350,7 @@
                                         </div>
                                         <div
                                             class="header__action-contact-btn-text d-flex align-items-start flex-column">
-                                            <span>CALL US</span>
+                                            <span>اتصل بنا</span>
                                             <a href="tel:009660000000">+9660000000</a>
                                         </div>
                                     </div>
@@ -299,12 +377,13 @@
     <main>
         <!-- Breadcrumb area start  -->
         <div class="breadcrumb__area breadcrumb-space overly theme-bg-heading-primary overflow-hidden">
-            <div class="breadcrumb__background" data-background="./assets/imgs/breadcrumb/5.jpg"></div>
+            <div class="breadcrumb__background" data-background="./assets/imgs/breadcrumb/4.jpg"></div>
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-12">
                         <div class="breadcrumb__content text-center">
-                            <h1 class="breadcrumb__title color-white title-animation">Organization</h1>
+                            <img class="mb-4" src="assets/imgs/logo/4.png" alt="">
+                            <h1 class="breadcrumb__title color-white title-animation">الصيانة</h1>
                             <div class="breadcrumb__menu d-inline-flex justify-content-center">
                                 <nav>
                                     <ul>
@@ -321,12 +400,11 @@
                                                             stroke-width="1.5" stroke-linecap="round"
                                                             stroke-linejoin="round" />
                                                     </svg>
-
-                                                    Home
+                                                    الرئيسية
                                                 </a>
                                             </span>
                                         </li>
-                                        <li class="active"><span>Organization</span></li>
+                                        <li class="active"><span>الصيانة</span></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -338,26 +416,221 @@
         <!-- Breadcrumb area start  -->
 
 
-            <div class="row section-space__bottom justify-content-center">
-                <div class="col-12">
-                    <div class="section__title-wrapper text-center mb-60 mb-sm-40 mb-xs-35 mt-5">
-                        <span class="section__subtitle justify-content-center mb-13 ml-0" style="margin-left: 50px;"><span data-width="40px" class="left-separetor" style="width: 27px; opacity: 1;"></span>Organization<span data-width="40px" class="right-separetor" style="width: 27px; opacity: 1;"></span></span>
-                     </div>
-                </div>
-                <div class="col-auto">
-                    <img src="assets/imgs/organization/organization_chart.png" alt="image not found" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 1s;">
+
+
+        <section class="service-details section-space">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8">
+                        <div class="service-details__content" id="test-1" style="display: block;">
+                            <div class="service-details__content-media">
+                                <img src="./assets/imgs/service-details/service-details-1.jpg"
+                                    class="img-fluid img-hvac" style="height: 65vh;" alt="الصورة غير متوفرة">
+                            </div>
+                            <h3 class="mb-20">الصيانة السكنية للتكييف</h3>
+                            <p class="mb-45 mb-xs-30">حافظ على منزلك باردًا ومريحًا طوال العام مع خدمات صيانة التكييف
+                                السكنية من شركة إنجاز التقنية! تقدم فرقنا من الفنيين المهرة فحوصات شاملة، وتنظيف النظام،
+                                وضبطات أساسية مخصصة لوحدة التكييف الخاصة بك. نقوم بفحص جميع المكونات بدقة، مما يضمن
+                                أداءً مثاليًا وكفاءة طاقة محسنة، مما يقلل بشكل كبير من تكاليف التبريد الخاصة بك. مع خطط
+                                الصيانة الوقائية لدينا، يمكنك الاستمتاع براحة البال مع العلم أن نظامك يعمل بسلاسة
+                                وموثوقية. كما أن الصيانة المنتظمة لا تطيل عمر جهاز التكييف فحسب، بل تساعد أيضًا في منع
+                                الأعطال المفاجئة.
+                                نحن نقدم خدمات الصيانة في الفيلات، والشقق، والمنازل، والمكاتب، وغيرها. يمكننا تنظيف
+                                وحدات التكييف في موقعك أو في ورشتنا أيضًا.
+                                ابقَ مع شركة إنجاز التقنية لصيانة التكييف للحفاظ على بيئة داخلية منعشة - تواصل معنا
+                                اليوم لتحديد موعد لصيانة التكييف الخاصة بك واستمتع بتبريد خالي من القلق!</p>
+                        </div>
+
+                        <div class="service-details__content" id="test-2" style="display: none;">
+                            <div class="service-details__content-media">
+                                <img src="./assets/imgs/about-us/about-media-1.jpg" class="img-fluid img-hvac"
+                                    style="height: 65vh;" alt="الصورة غير متوفرة">
+                            </div>
+                            <h3 class="mb-20">الصيانة التجارية - عقد صيانة سنوي</h3>
+                            <p class="mb-45 mb-xs-30">تأكد من أن أعمالك تعمل بسلاسة مع عقد الصيانة السنوي من شركة
+                                إنجاز التقنية! يقدم عقد الصيانة السنوي لدينا خدمات صيانة شاملة مصممة خصيصًا
+                                لاحتياجاتك، تشمل أنظمة التكييف، الأنظمة الكهربائية، السباكة، وأكثر. مع الفحوصات
+                                المنتظمة والخدمة في الوقت المناسب، نساعد في منع الأعطال المفاجئة ونطيل عمر معداتك،
+                                مما يضمن الأداء المثالي طوال العام. استمتع براحة البال مع العلم أن فنيينا المهرة على
+                                بعد مكالمة واحدة فقط لأي إصلاحات عاجلة أو صيانة مجدولة.
+                                دائمًا مع شركة إنجاز التقنية للحفاظ على كفاءة عملياتك ومرافقك في أفضل حالاتها. تواصل
+                                معنا اليوم لمعرفة المزيد عن عقد الصيانة السنوي!</p>
+                        </div>
+
+                        <div class="service-details__content" id="test-3" style="display: none;">
+                            <div class="service-details__content-media">
+                                <img src="./assets/imgs/about-us/about-media-3.jpg" class="img-fluid img-hvac"
+                                    style="height: 65vh;" alt="الصورة غير متوفرة">
+                            </div>
+                            <h3 class="mb-20">الصيانة التجارية - خطة الصيانة الوقائية</h3>
+                            <p class="mb-45 mb-xs-30">حسن كفاءة وطول عمر عملياتك التجارية مع خدمات الصيانة الوقائية
+                                المخطط لها من شركة إنجاز التقنية! تم تصميم برنامج الصيانة الوقائية المخطط لها خصيصًا
+                                للعقارات التجارية، مما يضمن أن جميع الأنظمة الحيوية مثل التكييف، الأنظمة الكهربائية،
+                                السباكة، وغيرها - يتم صيانتها بشكل منتظم. من خلال تحديد مواعيد الفحوصات والصيانة
+                                الروتينية، نساعد في منع الأعطال المفاجئة، وتقليل تكاليف الإصلاح، وإطالة عمر معداتك.
+                                يستخدم فنيوها المهرة نهجًا استباقيًا لتحديد المشكلات المحتملة قبل تصعيدها، مما يضمن
+                                بيئة عمل آمنة وفعالة. مع خطط الصيانة المخصصة التي تناسب احتياجاتك الخاصة، يمكنك
+                                التركيز على عملك الأساسي بينما نتولى الباقي.
+                                كن مع شركة إنجاز التقنية لصيانة الصيانة الوقائية الموثوقة - تواصل معنا اليوم لمعرفة
+                                المزيد!</p>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="sidebar sidebar-rr-sticky">
+                            <div class="sidebar__widget">
+                                <h4 class="sidebar__widget-title">خدماتنا</h4>
+                                <div class="sidebar__widget-category">
+                                    <a href="javascript:void(0);" onclick="showSection('test-1')">الصيانة السكنية
+                                        للتكييف<img src="./assets/imgs/blog-details/arrow.png" alt=""></a>
+                                    <a href="javascript:void(0);" onclick="showSection('test-2')">الصيانة التجارية -
+                                        عقد صيانة سنوي<img src="./assets/imgs/blog-details/arrow.png" alt=""></a>
+                                    <a href="javascript:void(0);" onclick="showSection('test-3')">الصيانة التجارية -
+                                        خطة الصيانة الوقائية<img src="./assets/imgs/blog-details/arrow.png" alt=""></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="blog section-space">
+                        <div class="container">
+
+
+                            <div class="row mb-minus-60 mt-minus-60">
+                                <div class="col-12">
+                                    <div
+                                        class="swiper blog__slider swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                                        <div class="swiper-wrapper" id="swiper-wrapper-dc7b074f1f2f10e63"
+                                            aria-live="off"
+                                            style="transition-duration: 0ms; transform: translate3d(-2200px, 0px, 0px);">
+                                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0"
+                                                role="group" aria-label="1 / 3"
+                                                style="width: 410px; margin-right: 30px;">
+                                                <div class="blog__item mb-60 mt-60">
+                                                    <a href="" data-cursor-text="View" class="blog__item-media d-block">
+                                                        <img src="assets/imgs/blog/blog-1.jpg" alt="image not found"
+                                                            class="img-fluid">
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1"
+                                                role="group" aria-label="2 / 3"
+                                                style="width: 410px; margin-right: 30px;">
+                                                <div class="blog__item mb-60 mt-60">
+                                                    <a href="" data-cursor-text="View" class="blog__item-media d-block">
+                                                        <img src="assets/imgs/blog/blog-2.jpg" alt="image not found"
+                                                            class="img-fluid">
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
+                                                data-swiper-slide-index="2" role="group" aria-label="3 / 3"
+                                                style="width: 410px; margin-right: 30px;">
+                                                <div class="blog__item mb-60 mt-60">
+                                                    <a href="" data-cursor-text="View" class="blog__item-media d-block">
+                                                        <img src="assets/imgs/blog/blog-3.jpg" alt="image not found"
+                                                            class="img-fluid">
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate-active"
+                                                data-swiper-slide-index="0" role="group" aria-label="1 / 3"
+                                                style="width: 410px; margin-right: 30px;">
+                                                <div class="blog__item mb-60 mt-60">
+                                                    <a href="" data-cursor-text="View" class="blog__item-media d-block">
+                                                        <img src="assets/imgs/blog/blog-1.jpg" alt="image not found"
+                                                            class="img-fluid">
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate-next"
+                                                data-swiper-slide-index="1" role="group" aria-label="2 / 3"
+                                                style="width: 410px; margin-right: 30px;">
+                                                <div class="blog__item mb-60 mt-60">
+                                                    <a href="" data-cursor-text="View" class="blog__item-media d-block">
+                                                        <img src="assets/imgs/blog/blog-2.jpg" alt="image not found"
+                                                            class="img-fluid">
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="2"
+                                                role="group" aria-label="3 / 3"
+                                                style="width: 410px; margin-right: 30px;">
+                                                <div class="blog__item mb-60 mt-60">
+                                                    <a href="" data-cursor-text="View" class="blog__item-media d-block">
+                                                        <img src="assets/imgs/blog/blog-3.jpg" alt="image not found"
+                                                            class="img-fluid">
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-active"
+                                                data-swiper-slide-index="0" role="group" aria-label="1 / 3"
+                                                style="width: 410px; margin-right: 30px;">
+                                                <div class="blog__item mb-60 mt-60">
+                                                    <a href="" data-cursor-text="View" class="blog__item-media d-block">
+                                                        <img src="assets/imgs/blog/blog-1.jpg" alt="image not found"
+                                                            class="img-fluid">
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-next"
+                                                data-swiper-slide-index="1" role="group" aria-label="2 / 3"
+                                                style="width: 410px; margin-right: 30px;">
+                                                <div class="blog__item mb-60 mt-60">
+                                                    <a href="" data-cursor-text="View" class="blog__item-media d-block">
+                                                        <img src="assets/imgs/blog/blog-2.jpg" alt="image not found"
+                                                            class="img-fluid">
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
+                                                data-swiper-slide-index="2" role="group" aria-label="3 / 3"
+                                                style="width: 410px; margin-right: 30px;">
+                                                <div class="blog__item mb-60 mt-60">
+                                                    <a href="" data-cursor-text="View" class="blog__item-media d-block">
+                                                        <img src="assets/imgs/blog/blog-3.jpg" alt="image not found"
+                                                            class="img-fluid">
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="swiper-notification" aria-live="assertive"
+                                            aria-atomic="true"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
+        </section>
 
 
 
 
-        <!-- our-clients area start -->
 
-        <!-- our-clients area end -->
+
+
+
+
+
+
+
+
+
+
+
     </main>
-    <!-- Footer area start -->
+    <!-- Footer area end -->
     <footer>
         <section class="footer-2__area-common footer-bg-1 overflow-hidden">
             <div class="container rr-shape-p-c_1">
@@ -376,21 +649,20 @@
                                 </div>
 
                                 <div class="footer-2__content mb-25 mb-xs-20">
-                                    <p class="mb-0">At Injaz Fast And Est., we specialize in delivering high-quality,
-                                        energy-efficient HVAC systems designed to keep your space comfortable in every
-                                        season. Whether you need installation, upgrades, or maintenance, our expert team
-                                        ensures seamless execution, meeting the highest safety and quality standards.
-                                    </p>
+                                    <p class="mb-0">في إنجاز فاست وأست، نختص بتقديم أنظمة تكييف هواء عالية الجودة وموفرة
+                                        للطاقة مصممة للحفاظ على راحة مساحتك في جميع الفصول. سواء كنت بحاجة إلى تركيب أو
+                                        ترقيات أو صيانة، فإن فريقنا الخبراء يضمن تنفيذًا سلسًا مع الالتزام بأعلى معايير
+                                        السلامة والجودة.</p>
                                 </div>
 
                                 <div class="footer-2__working">
                                     <div class="footer-2__widget-title mb-14">
-                                        <h4>Working Hours</h4>
+                                        <h4>ساعات العمل</h4>
                                     </div>
                                     <ul class="footer-2__working-list">
-                                        <li>Saturday: 09.00AM – 05.00PM</li>
-                                        <li>Thursday: 09.00AM – 05.00PM</li>
-                                        <li>Friday: Close</li>
+                                        <li>السبت: 09:00 صباحًا – 05:00 مساءً</li>
+                                        <li>الخميس: 09:00 صباحًا – 05:00 مساءً</li>
+                                        <li>الجمعة: مغلق</li>
                                     </ul>
                                 </div>
                             </div>
@@ -399,30 +671,15 @@
                         <div class="col-lg-2 col-6">
                             <div class="footer-2__widget footer-2__widget-item-2">
                                 <div class="footer-2__widget-title">
-                                    <h4>Quick Links</h4>
+                                    <h4>الروابط السريعة</h4>
                                 </div>
                                 <div class="footer-2__link">
                                     <ul>
-
-
-                                        <li><a href="project.html">Our Project</a></li>
-                                        <li><a href="Gallery.html">Gallery</a></li>
-                                        <li><a href=" career.html">Career</a></li>
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="footer-2__widget footer-2__widget-item-2">
-                                <div class="footer-2__widget-title">
-                                    <h4>Who We Are</h4>
-                                </div>
-                                <div class="footer-2__link">
-                                    <ul>
-
-                                        <li><a href="about-us.html">About Us</a></li>
-                                        <li><a href="ceo.html">CEO Manager</a></li>
-                                        <li><a href="visionMission.html">Vision & Mission</a></li>
-                                        <li><a href="organization.html">Organization</a></li>
+                                        <li><a href="about-us.html">عن الشركة</a></li>
+                                        <li><a href="project.html">مشاريعنا</a></li>
+                                        <li><a href="Gallery.html">المعرض</a></li>
+                                        <li><a href="career.html">الوظائف</a></li>
+                                        <li><a href="contact.html">اتصل بنا</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -431,14 +688,14 @@
                         <div class="col-lg-3 col-6">
                             <div class="footer-2__widget footer-2__widget-item-3">
                                 <div class="footer-2__widget-title">
-                                    <h4>Our Service</h4>
+                                    <h4>خدماتنا</h4>
                                 </div>
 
                                 <div class="footer-2__link">
                                     <ul>
-                                        <li><a href="service-details.html">HVAC</a></li>
-                                        <li><a href="service-details-2.html">General Contracting</a></li>
-                                        <li><a href="service-details-3.html">Maintence</a></li>
+                                        <li><a href="service-details.html">التكييف</a></li>
+                                        <li><a href="service-details-2.html">المقاولات العامة</a></li>
+                                        <li><a href="service-details-3.html">الصيانة</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -447,9 +704,8 @@
                         <div class="col-lg-3 col-6">
                             <div class="footer-2__widget footer-2__widget-item-4">
                                 <div class="footer-2__widget-title">
-                                    <h4>Our Gallery</h4>
+                                    <h4>معرضنا</h4>
                                 </div>
-
                                 <div class="footer-2__widget-gallery">
                                     <div class="row g-10">
                                         <div class="col-4">
@@ -505,8 +761,11 @@
                     <div class="row align-items-center">
                         <div class="col-xl-4">
                             <div class="footer-2__copyright text-xl-start text-center">
-                                <p class="mb-0">Developed By <a href="https://www.yellostack.com/">Yellostack</a> 2024 .
-                                    All right reserved.</p>
+                                <p class="mb-0">تم التطوير بواسطة <a href="https://www.yellostack.com/">Yellostack</a>
+                                    2024.
+                                    جميع الحقوق محفوظة.
+                                </p>
+
                             </div>
                         </div>
 
@@ -565,8 +824,9 @@
                         <div class="col-xl-4">
                             <div class="footer-2__copyright-menu">
                                 <ul>
-                                    <li><a href="">Privacy Policy</a></li>
-                                    <li><a href="">Terms & Conditions</a></li>
+                                    <li><a href="">سياسة الخصوصية</a></li>
+                                    <li><a href="">الشروط والأحكام</a></li>
+
                                 </ul>
                             </div>
                         </div>
@@ -575,7 +835,7 @@
             </div>
         </section>
     </footer>
-    <!-- Footer area end -->
+    <!-- Footer area start -->
 
     <!-- JS here -->
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
@@ -605,6 +865,18 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/plugins/magiccursor.js"></script>
     <script src="assets/js/image-reveal-hover.js"></script>
-</body>
+    <script>
+        function showSection(id) {
+            // Hide all sections
+            var sections = document.getElementsByClassName('service-details__content');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
 
-</html>
+            // Show the clicked section
+            var sectionToShow = document.getElementById(id);
+            sectionToShow.style.display = 'block';
+        }
+    </script>
+
+</body>
