@@ -13925,6 +13925,8 @@ body .ui-tooltip {
   border: 1px dashed rgba(255, 255, 255, 0.3);
 }
 
+
+
 .working-process-2__list-item:last-child:after {
   display: none;
 }
@@ -16419,4 +16421,34 @@ body .ui-tooltip {
   color: var(--rr-common-white);
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+
+
+
+
+
+
+
+
+html[lang="ar"] .working-process-2__list-item:after {
+  right: 22px;
+}
+
+
+html[lang="ar"] .footer-2__link ul li::before {
+  content: "\f101"; /* رمز السهم */
+  font-family: var(--rr-ff-fontawesome); /* تأكد من أن الخط المستخدم هو Font Awesome */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  color: var(--rr-common-white);
+  
+  display: inline-block; /* لضمان تطبيق التحويل */
+  position: absolute;
+  top: 50%;
+  right: -21px; /* تموضع السهم من اليمين */
+  transform: translateY(-50%) scaleX(-1); /* تحريك السهم أفقياً وعكسه */
+  -webkit-transform: translateY(-50%) scaleX(-1); /* دعم المتصفحات القديمة */
 }
