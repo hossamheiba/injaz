@@ -16431,3 +16431,6 @@ body .ui-tooltip {
 
 
 
+html[lang="ar"] .working-process-2__list-item:after {
+  right: 22px;
+}
