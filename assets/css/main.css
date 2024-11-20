@@ -1384,7 +1384,7 @@ a:hover {
 	1.8 spacing
 ---------------------------------*/
 .section-space {
-  padding-top: 120px;
+  /* padding-top: 120px; */
   padding-bottom: 120px;
 }
 
