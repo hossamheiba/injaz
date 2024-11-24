@@ -1492,7 +1492,7 @@ a:hover {
 }
 
 .section-space__bottom {
-  padding-bottom: 120px;
+  padding-bottom: 80px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1508,7 +1508,7 @@ a:hover {
 }
 
 .section-space__top {
-  padding-top: 120px;
+  padding-top: 80px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -16310,4 +16310,48 @@ body .ui-tooltip {
 
 html[lang="ar"] .working-process-2__list-item:after {
   right: 22px;
+}
+
+
+
+        
+
+        
+/* التوافق مع الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col-md-6 {
+        margin-bottom: 20px;
+    }
+
+    .img-fluid {
+        width: 100%; /* التأكد من تناسب الصورة مع الشاشة الصغيرة */
+        height: auto;
+    }
+}
+
+                
+.section-number {
+    font-size: 2.5rem; /* حجم الرقم */
+    font-weight: bold; /* جعل الرقم أكثر سمكًا */
+    color: #e13f3a; /* لون مميز للرقم */
+    background-color: rgba(225, 63, 58, 0.1); /* خلفية شفافة خفيفة حول الرقم */
+    padding: 0px 15px; /* إضافة مساحة داخلية */
+    border-radius: 20%; /* جعل الرقم داخل دائرة */
+    margin-right: 15px; /* مسافة بين الرقم والعنوان */
+    margin-left: 15px; /* مسافة بين الرقم والعنوان */
+}
+
+.wow {
+  visibility: hidden; /* يجعل العنصر غير مرئي حتى يبدأ التأثير */
+}
+.animated {
+  visibility: visible; /* يجعل العنصر مرئيًا عند بدء التأثير */
 }
