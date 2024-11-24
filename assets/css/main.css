@@ -370,9 +370,9 @@ svg path {
   /**
   @font family declaration
   */
-  --rr-ff-body: 'Roboto', sans-serif;
-  --rr-ff-heading: 'Exo', sans-serif;
-  --rr-ff-robo: 'Roboto', sans-serif;
+  --rr-ff-body: 'Cairo', sans-serif;
+  --rr-ff-heading: 'Cairo', sans-serif;
+  --rr-ff-robo: 'Cairo', sans-serif;
   --rr-ff-exo: 'Exo', sans-serif;
   --rr-ff-fontawesome: "Font Awesome 6 Pro";
   /**
@@ -16354,4 +16354,27 @@ html[lang="ar"] .working-process-2__list-item:after {
 }
 .animated {
   visibility: visible; /* يجعل العنصر مرئيًا عند بدء التأثير */
+}
+
+
+h1 {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700; /* عريض */
+}
+
+p {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 400; /* عادي */
+}
+
+nav#mobile-menu {
+  font-family: 'Cairo', sans-serif;
+}
+
+nav#mobile-menu ul li {
+  font-family: 'Cairo', sans-serif;
+}
+
+nav#mobile-menu ul li a {
+  font-family: 'Cairo', sans-serif !important;
 }
