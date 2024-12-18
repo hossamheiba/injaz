@@ -257,56 +257,101 @@
     </div>
   </section>
 
-  <section class="contact section-space">
+  <section class="get-in-touch get-in-touch__space">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
-          <div class="contact__from">
-            <p>أرسل سيرتك الذاتية إلى أو استخدم نموذج التقديم. نحن متحمسون لرؤية ما يمكنك تقديمه!</p>
-            <div class="row">
-              <div class="col-xl-6">
-                <div class="contact__form-input">
-                  <input name="name" id="lname" type="text" placeholder="الاسم الأول">
-                </div>
-              </div>
-              <div class="col-xl-6">
-                <div class="contact__form-input">
-                  <input name="number" id="number" type="number" placeholder="رقم الهاتف">
-                </div>
-              </div>
-              <div class="col-xl-6">
-                <div class="contact__form-input">
-                  <input name="email" id="email" type="email" placeholder="عنوان البريد الإلكتروني">
-                </div>
-              </div>
-              <div class="col-xl-6">
-                <label for="formFile" class="form-label">إرفاق السيرة الذاتية</label>
-                <input class="form-control" type="file" id="formFile">
-              </div>
+        <div class="col-lg-7 m-auto">
+          <div class="get-in-touch__contact-form">
+            <h3 class="mb-20">تواصل معنا</h3>
 
-              <div class="col-sm-12">
-                <div class="contact__form-input">
-                  <div class="validation__wrapper-up position-relative">
-                    <textarea name="textarea" id="textarea" placeholder="اكتب رسالتك"></textarea>
-                  </div>
-                </div>
-              </div>
-
+            <form id="contact-form" class="row g-3">
+              <!-- Full Name Field -->
               <div class="col-12">
-                <button type="submit" class="rr-btn">
-                  <span class="btn-wrap">
-                    <span class="text-one">إرسال الرسالة</span>
-                    <span class="text-two">إرسال الرسالة</span>
-                  </span>
-                </button>
+                  <div class="get-in-touch__form-input">
+                      <input 
+                          name="from_name" 
+                          id="lname" 
+                          type="text" 
+                          placeholder="الاسم الكامل *" 
+                          required>
+                  </div>
               </div>
-            </div>
+          
+              <!-- Phone Number Field -->
+              <div class="col-xl-6">
+                  <div class="get-in-touch__form-input">
+                      <input 
+                          name="phone" 
+                          id="number" 
+                          type="tel" 
+                          placeholder="رقم الهاتف *" 
+                          pattern="[0-9]{10,15}" 
+                          title="يرجى إدخال رقم هاتف صحيح يتكون من 10 إلى 15 رقمًا." 
+                          required>
+                  </div>
+              </div>
+          
+              <!-- Email Field -->
+              <div class="col-xl-6">
+                  <div class="get-in-touch__form-input">
+                      <input 
+                          name="from_email" 
+                          id="email" 
+                          type="email" 
+                          placeholder="البريد الإلكتروني *" 
+                          required>
+                  </div>
+              </div>
+          
+              <!-- Message Field -->
+              <div class="col-sm-12">
+                  <div class="get-in-touch__form-input">
+                      <textarea 
+                          name="message" 
+                          id="textarea" 
+                          placeholder="أدخل ملاحظاتك *" 
+                          required></textarea>
+                  </div>
+              </div>
+          
+              <!-- Submit Button -->
+              <div class="col-12">
+                  <button type="submit" class="rr-btn">
+                      <span class="btn-wrap">
+                          <span class="text-one">إرسال الرسالة</span>
+                          <span class="text-two">إرسال الرسالة</span>
+                      </span>
+                  </button>
+              </div>
+          </form>
+          
+          <!-- EmailJS Script -->
+          <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+          <script>
+              // Initialize EmailJS
+              (function() {
+                  emailjs.init("0Dhd1pod4wgkIg33B");  // استبدل بـ YOUR_USER_ID الخاص بك
+              })();
+          
+              // Handle Form Submission
+              const form = document.getElementById('contact-form');
+              form.addEventListener('submit', function(event) {
+                  event.preventDefault();
+          
+                  emailjs.sendForm('service_temwg1n', 'template_dsssutb', form)
+                      .then(function(response) {
+                          alert('تم إرسال الرسالة بنجاح!');
+                          form.reset(); // إعادة تعيين الحقول بعد الإرسال الناجح
+                      }, function(error) {
+                          alert('فشل في إرسال الرسالة: ' + error.text);
+                      });
+              });
+          </script>
           </div>
         </div>
       </div>
     </div>
   </section>
-
 
 
   <!-- our-clients area end -->

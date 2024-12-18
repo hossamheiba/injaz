@@ -245,7 +245,7 @@
     <!-- Breadcrumb area start  -->
 
 
-    <section class="personal-info mt-4">
+    <section class="personal-info mt-4" >
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -258,61 +258,102 @@
         </div>
     </section>
 
-    <section class="contact section-space">
+    <section class="get-in-touch ">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="contact__from">
-                        <h4 class="title-animation mb-10">Contact Me</h4>
-                        <p>Submit your resume to or use the application form. We are excited to see what you can bring
-                            to the table!</p>
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="contact__form-input">
-                                    <input name="name" id="lname" type="text" placeholder="First Name">
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="contact__form-input">
-                                    <input name="number" id="number" type="number" placeholder="Phone Number">
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="contact__form-input">
-                                    <input name="email" id="email" type="email" placeholder="Email Address">
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <label for="formFile" class="form-label">Attach CV</label>
-                                <input class="form-control" type="file" id="formFile">
-                            </div>
 
+                <div class="col-lg-7 m-auto">
+                    <div class="get-in-touch__contact-form">
+<!-- Contact Form -->
+<form id="contact-form" class="row g-3 " style="margin: 20px 0px;">
+<!-- Full Name Field -->
+<div class="col-12">
+    <div class="get-in-touch__form-input">
+        <input 
+            name="from_name" 
+            id="lname" 
+            type="text" 
+            placeholder="Full Name *" 
+            required>
+    </div>
+</div>
 
+<!-- Phone Number Field -->
+<div class="col-xl-6">
+    <div class="get-in-touch__form-input">
+        <input 
+            name="phone" 
+            id="number" 
+            type="tel" 
+            placeholder="Phone Number *" 
+            pattern="[0-9]{10,15}" 
+            title="Please enter a valid phone number consisting of 10 to 15 digits." 
+            required>
+    </div>
+</div>
 
-                            <div class="col-sm-12">
-                                <div class="contact__form-input">
-                                    <div class="validation__wrapper-up position-relative">
-                                        <textarea name="textarea" id="textarea"
-                                            placeholder="Type Your Message"></textarea>
-                                    </div>
-                                </div>
-                            </div>
+<!-- Email Field -->
+<div class="col-xl-6">
+    <div class="get-in-touch__form-input">
+        <input 
+            name="from_email" 
+            id="email" 
+            type="email" 
+            placeholder="Email Address *" 
+            required>
+    </div>
+</div>
 
-                            <div class="col-12">
-                                <button type="submit" class="rr-btn">
-                                    <span class="btn-wrap">
-                                        <span class="text-one">Send Message</span>
-                                        <span class="text-two">Send Message</span>
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
+<!-- Message Field -->
+<div class="col-sm-12">
+    <div class="get-in-touch__form-input">
+        <textarea 
+            name="message" 
+            id="textarea" 
+            placeholder="Enter Your Message *" 
+            required></textarea>
+    </div>
+</div>
+
+<!-- Submit Button -->
+<div class="col-12">
+    <button type="submit" class="rr-btn">
+        <span class="btn-wrap">
+            <span class="text-one">Send Message</span>
+            <span class="text-two">Send Message</span>
+        </span>
+    </button>
+</div>
+</form>
+
+<!-- EmailJS Script -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+// Initialize EmailJS
+(function() {
+    emailjs.init("0Dhd1pod4wgkIg33B");  // Replace with YOUR_USER_ID
+})();
+
+// Handle Form Submission
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_temwg1n', 'template_dsssutb', form)
+        .then(function(response) {
+            alert('Message sent successfully!');
+            form.reset(); // Reset the fields after successful submission
+        }, function(error) {
+            alert('Failed to send message: ' + error.text);
+        });
+});
+</script>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 
     <!-- our-clients area end -->
     </main>

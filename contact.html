@@ -308,43 +308,91 @@
                     <div class="col-lg-7 m-auto">
                         <div class="get-in-touch__contact-form">
                             <h3 class="mb-20">Get in touch</h3>
+<!-- Contact Form -->
+<form id="contact-form" class="row g-3">
+    <!-- Full Name Field -->
+    <div class="col-12">
+        <div class="get-in-touch__form-input">
+            <input 
+                name="from_name" 
+                id="lname" 
+                type="text" 
+                placeholder="Full Name *" 
+                required>
+        </div>
+    </div>
 
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="get-in-touch__form-input">
-                                        <input name="name" id="lname" type="text" placeholder="full Name *">
-                                    </div>
-                                </div>
+    <!-- Phone Number Field -->
+    <div class="col-xl-6">
+        <div class="get-in-touch__form-input">
+            <input 
+                name="phone" 
+                id="number" 
+                type="tel" 
+                placeholder="Phone Number *" 
+                pattern="[0-9]{10,15}" 
+                title="Please enter a valid phone number consisting of 10 to 15 digits." 
+                required>
+        </div>
+    </div>
 
-                                <div class="col-xl-6">
-                                    <div class="get-in-touch__form-input">
-                                        <input name="number" id="number" type="number" placeholder="phone Number *">
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="get-in-touch__form-input">
-                                        <input name="email" id="email" type="email" placeholder="Email here *">
-                                    </div>
-                                </div>
+    <!-- Email Field -->
+    <div class="col-xl-6">
+        <div class="get-in-touch__form-input">
+            <input 
+                name="from_email" 
+                id="email" 
+                type="email" 
+                placeholder="Email Address *" 
+                required>
+        </div>
+    </div>
 
-                                <div class="col-sm-12">
-                                    <div class="get-in-touch__form-input">
-                                        <div class="validation__wrapper-up position-relative">
-                                            <textarea name="textarea" id="textarea"
-                                                placeholder="write note *"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
+    <!-- Message Field -->
+    <div class="col-sm-12">
+        <div class="get-in-touch__form-input">
+            <textarea 
+                name="message" 
+                id="textarea" 
+                placeholder="Enter Your Message *" 
+                required></textarea>
+        </div>
+    </div>
 
-                                <div class="col-12">
-                                    <button type="submit" class="rr-btn">
-                                        <span class="btn-wrap">
-                                            <span class="text-one">Send Message</span>
-                                            <span class="text-two">Send Message</span>
-                                        </span>
-                                    </button>
-                                </div>
-                            </div>
+    <!-- Submit Button -->
+    <div class="col-12">
+        <button type="submit" class="rr-btn">
+            <span class="btn-wrap">
+                <span class="text-one">Send Message</span>
+                <span class="text-two">Send Message</span>
+            </span>
+        </button>
+    </div>
+</form>
+
+<!-- EmailJS Script -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    // Initialize EmailJS
+    (function() {
+        emailjs.init("0Dhd1pod4wgkIg33B");  // Replace with YOUR_USER_ID
+    })();
+
+    // Handle Form Submission
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        emailjs.sendForm('service_temwg1n', 'template_dsssutb', form)
+            .then(function(response) {
+                alert('Message sent successfully!');
+                form.reset(); // Reset the fields after successful submission
+            }, function(error) {
+                alert('Failed to send message: ' + error.text);
+            });
+    });
+</script>
+
                         </div>
                     </div>
                 </div>
